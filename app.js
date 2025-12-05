@@ -23,7 +23,8 @@ const cors = require('cors');
 const allowedOrigins = [
   'http://localhost:4200',
   'https://neon-sable-30f7e3.netlify.app',
-  'https://loc8rauth24-2021810076-gunsuhwang.netlify.app'
+  'https://loc8rauth24-2021810076-gunsuhwang.netlify.app',
+  'https://loc8rpwa2-2021810076.netlify.app'
 ];
 
 const corsOptions = {
