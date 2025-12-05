@@ -158,7 +158,7 @@ const locationSchema = new mongoose.Schema({
 
 locationSchema.index({coords:'2dsphere'});
 
-mongoose.model('Location', locationSchema);
+mongoose.models.Location || mongoose.model('Location', locationSchema);
 
 const renderDetailPage = function (req, res, location) {
     res.render('location-info', {
@@ -265,4 +265,5 @@ module.exports = {
     locationInfo,
     addReview,
     doAddReview
+
 };
